@@ -2,7 +2,10 @@ var chunk_one = [ 'Lebron', 'Aaliyah', 'Diamond', 'Dominique', 'Aliyah', 'Jazmin
 var chunk_two = [ 'Lucas' , 'Jake','Scott','Amy', 'Molly','Hannah','Lucas'];
 
 const mergeArrays = (firstArray, secondArray) => {
-	//your code here
+    //your code here
+    let newArr = firstArray.concat(secondArray);
+
+    return newArr;
 }
 
 console.log(mergeArrays(chunk_one, chunk_two));

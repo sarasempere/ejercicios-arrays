@@ -4,6 +4,12 @@ const ZerosToYahoos = (arr) => {
     let return_array = [];
     arr.forEach((item,index) => {
             // magic goes inside these brackets
+        if(myArray[item] === 0){
+            return_array.push("Yahoo");
+        }else{
+         //return_array.push(myArray[item]);
+           return_array.push("1");
+        }        
     });
     return return_array;
 };

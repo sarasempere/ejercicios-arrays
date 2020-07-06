@@ -3,4 +3,16 @@ let counts = {};
 
 // your code here
 
-console.log(counts);
+
+for(element in par){
+    
+    if(par[element] === " "){
+        continue
+    } else {
+        let minus = par[element].toLowerCase()
+        counts[minus]!==undefined ? counts[minus]++ : counts[minus]=1;
+    }
+    
+}
+
+console.log(counts)
